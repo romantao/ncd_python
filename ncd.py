@@ -32,7 +32,7 @@ def ncd_calc(glob_files, compressor = "zlib", level = 6, precompressed = 0):
 	from itertools import combinations
 	file_datas = {}
 	files = glob(glob_files+'*')
-	
+
 	for filec in files:
 		file_datas[filec] = open(filec).read()
 
